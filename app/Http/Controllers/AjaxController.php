@@ -19,6 +19,9 @@ class AjaxController extends Controller
         ],
         'pages' => [
             'controller' => 'App\Http\Controllers\PagesController'
+        ],
+        'ascii' => [
+            'controller' => 'App\Http\Controllers\AsciiController'
         ]
     ];
 

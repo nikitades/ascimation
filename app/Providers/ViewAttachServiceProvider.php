@@ -68,6 +68,10 @@ class ViewAttachServiceProvider extends ServiceProvider
         view()->composer('admin.edit.views', function($view) {
             $view->with('files_list', \App\View::ViewFilesList());
         });
+
+        view()->composer('pages.homePage', function($view) {
+            $view->with('latest_ascii', \App\Ascii::latest());
+        });
     }
 
     /**

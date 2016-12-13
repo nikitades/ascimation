@@ -11,7 +11,7 @@
 @section('content')
     @yield('before-body')
     <h3>{{$page->header}}</h3>
-    <div class="page_body">
+    <div class="page_body decentered-container">
         {!! $page->page_content !!}
     </div>
     @yield('after-body')

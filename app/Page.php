@@ -37,7 +37,7 @@ class Page extends CustomModel
     {
         return [
             'Картинка страницы' => 'PageImage',
-            'Изображение слайдера' => 'PageSliderImage',
+//            'Изображение слайдера' => 'PageSliderImage',
         ];
     }
 
@@ -57,7 +57,7 @@ class Page extends CustomModel
     {
         $parentsStack = [];
         $this->findParents($parentsStack);
-        $url = '';
+        $url = '/pages';
         $prefix = '';
         foreach (array_reverse($parentsStack) as $item) {
             $url .= $prefix . $item->url;

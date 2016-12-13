@@ -118,6 +118,12 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('news/{id}/hot', 'NewsController@makeHot');
 
     /*
+     * Ascii:
+     */
+
+    Route::get('ascii/{id}/delete', 'AsciiController@destroy');
+
+    /*
      * Texts:
      */
 
@@ -180,7 +186,17 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 });
 
 /*
+ * App routes:
+ */
+
+Route::get('/latest', 'AsciiController@enlist');
+Route::get('/latest/{page}', 'AsciiController@enlist')->where('page', '[0-9]+');
+Route::get('/embed/{ascii_uuid}', 'AsciiController@embed');
+Route::get('/cleanse', 'AsciiController@cleanse');
+Route::get('/{ascii_uuid}', 'AsciiController@show');
+
+/*
  * Pages:
  */
 
-Route::get('{whole_url}', 'PagesController@show')->where('whole_url', '(.*)');
+Route::get('/pages/{whole_url}', 'PagesController@show')->where('whole_url', '(.*)');

@@ -53,6 +53,8 @@ class InitialMigration extends Migration
             $table->string('filename');
             $table->string('filename_h100');
             $table->string('filename_h500');
+            $table->string('filename_ascii');
+            $table->string('filename_ascii_gif');
             $table->timestamps();
         });
 

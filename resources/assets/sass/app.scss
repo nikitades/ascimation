@@ -23,3 +23,23 @@
   box-sizing: content-box !important;
   -webkit-box-sizing: content-box !important;
 }
+
+#content {
+  padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.frame__small {
+  font-size: 25%;
+}
+
+.help-block.error {
+  color: red;
+}
+
+@media (min-width: 1152px) {
+  .decentered-container {
+    max-width: 970px;
+  }
+}

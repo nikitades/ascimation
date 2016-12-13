@@ -51,6 +51,7 @@ elixir(function(mix) {
     mix.sass('app.scss', 'resources/assets/css/app.css');
     mix.sass('regularPage.scss', 'public/css/regularPage.css');
     mix.sass('homePage.scss', 'public/css/homePage.css');
+    mix.sass('asciiPage.scss', 'public/css/asciiPage.css');
     mix.sass('login.scss', 'public/css/login.css');
     mix.sass('admin-pages-list.scss', 'public/css/admin-pages-list.css');
 

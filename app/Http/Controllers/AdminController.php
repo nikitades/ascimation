@@ -34,6 +34,7 @@ class AdminController extends Controller
             'Главная' => '/admin',
             'split1' => '',
             'Новости' => '/admin/news',
+            'ASCII' => '/admin/ascii',
             'split2' => '',
             'Страницы' => '/admin/pages',
             'Отображения' => '/admin/views',
@@ -59,6 +60,7 @@ class AdminController extends Controller
             'news' => 'NewsItem',
             'settings' => 'Setting',
             'backups' => 'Backup',
+            'ascii' => 'Ascii'
         ];
         return $names[$name];
     }

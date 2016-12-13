@@ -30,8 +30,8 @@ class Image extends CustomModel
 
     public function url($type = false, $index = false)
     {
-        if ($type && $index) {
-            $filename = 'filename_' .$type. $index;
+        if ($type) {
+            $filename = 'filename_' . $type . ($index ?: '');
             return self::IMAGES_STASH . '/' . $this->$filename;
         } else {
             return self::IMAGES_STASH . '/' . $this->filename;

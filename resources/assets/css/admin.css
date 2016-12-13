@@ -1,49 +1,61 @@
 /* Our own snippets */
 .no-padding {
-  padding: 0; }
+  padding: 0;
+}
 
 .no-side-padding {
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+}
 
 .bottom {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+}
 
 .red {
-  color: red; }
+  color: red;
+}
 
 .red:hover {
-  color: #c80000; }
+  color: #c80000;
+}
 
 .buffer-25 {
   margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+}
 
 .buffer-50 {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .input-holder {
   box-sizing: border-box;
   padding-top: 6px;
-  margin-left: 0; }
+  margin-left: 0;
+}
 
 .form-horizontal .editing-fields .control-label {
   text-align: left;
   padding-top: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 .form-horizontal .editing-fields input[type="checkbox"] {
   width: 24px;
-  height: 24px; }
+  height: 24px;
+}
 
 .control-label, input[type='checkbox'], input[type='radio'] {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .btn-file {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .btn-file input[type=file] {
   position: absolute;
@@ -58,20 +70,24 @@
   outline: none;
   background: white;
   cursor: inherit;
-  display: block; }
+  display: block;
+}
 
 .alert-nice {
   padding-left: 30px;
-  margin: 30px 0; }
+  margin: 30px 0;
+}
 
 /* Inputs style: */
 /* Date pickers: */
 input[type="date"] {
   position: relative;
-  padding-left: 40px; }
+  padding-left: 40px;
+}
 
 ::-webkit-inner-spin-button {
-  display: none; }
+  display: none;
+}
 
 ::-webkit-calendar-picker-indicator {
   position: absolute;
@@ -79,26 +95,32 @@ input[type="date"] {
   top: 10px;
   display: block;
   opacity: 1;
-  float: left; }
+  float: left;
+}
 
 /* Styles */
 #content {
   padding-top: 50px;
-  height: 100vh; }
+  height: 100vh;
+}
 
 td.controls form {
   width: 24px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .page_not_active {
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 /* Sidebar */
 .sidebar {
-  height: 100%; }
+  height: 100%;
+}
 
 .sidebar .nav li {
-  position: relative; }
+  position: relative;
+}
 
 .sidebar .nav li:after {
   content: '';
@@ -107,40 +129,84 @@ td.controls form {
   top: 15%;
   height: 70%;
   width: 2px;
-  background: rgba(0, 0, 0, 0.01); }
+  background: rgba(0, 0, 0, 0.01);
+}
 
 .sidebar .nav li.delimiter {
-  height: 10px; }
+  height: 10px;
+}
 
 .sidebar .nav li.delimiter:hover {
-  background: white; }
+  background: white;
+}
 
 .sidebar .nav li.active:after {
-  background: #189DE1; }
+  background: #189DE1;
+}
 
 .sidebar .active {
-  background: rgba(222, 222, 222, 0.9); }
+  background: rgba(222, 222, 222, 0.9);
+}
 
 @media (max-width: 767px) {
   .sidebar {
-    display: none; } }
+    display: none;
+  }
+}
 
 /* List */
-table.list th:last-child {
-  text-align: right; }
+.admin-entry-item {
+  display: inline-block;
+}
 
-/* Texts: */
-.text_content pre {
+.list-group.entity-sortable li.placeholder {
+  min-height: 44px;
+  list-style: none;
+}
+
+.list-group.entity-sortable li.placeholder:before {
+  content: '>';
+  position: absolute;
+  left: -12px;
+  top: 25%;
+  font-weight: 600;
+}
+
+.admin-entry-item.admin-entry-logo {
+  float: left;
+  margin-right: 5px;
+}
+
+.admin-entry-item.admin-entry-controls {
+  float: right;
+}
+
+.admin-entry-item.admin-entry-controls > * {
+  display: block;
+  float: left;
+}
+
+.admin-entry-item p {
   margin: 0;
-  padding: 0; }
+}
+
+.admin-entry-item.admin-entry-content pre {
+  overflow: initial;
+}
+
+.admin-entry-item.admin-entry-content pre:before, .admin-entry-item.admin-entry-content pre:after {
+  content: ' ';
+}
 
 /* Editing page: */
 .ancestors-select {
-  font: 12px 'Courier New'; }
+  font: 12px 'Courier New';
+}
 
 /* Attached image: */
 .attached-images-list {
-  text-align: left; }
+  text-align: left;
+}
 
 .attached-images-list .attached-image {
   display: inline-block;
@@ -151,24 +217,55 @@ table.list th:last-child {
   padding: 15px;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  height: 180px; }
+  height: 180px;
+}
 
 .attached-image--control {
   position: absolute;
   bottom: 10px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .attached-image--delete {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .attached-image--delete .glyphicon {
   top: 2px;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+}
+
+/* Preloader */
+.preloader-container {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1035;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin: -100px 0 0 -70px;
+}
+
+/* Texts: */
+.text_content pre {
+  margin: 0;
+  padding: 0;
+}
 
 /* Attached file: */
 .attached-file {
-  margin: 0 0 10px 0; }
+  margin: 0 0 10px 0;
+}
 
 .attached-file:before {
   content: '';
@@ -176,30 +273,43 @@ table.list th:last-child {
   vertical-align: top;
   height: 20px;
   width: 17px;
-  background: url("/images/icons/document325.svg") no-repeat center center/contain; }
+  background: url("/images/icons/document325.svg") no-repeat center center/contain;
+}
 
 .attached-file.zip:before {
-  background: url("/images/icons/zip6.svg") no-repeat center center/contain; }
+  background: url("/images/icons/zip6.svg") no-repeat center center/contain;
+}
 
 .attached-file > * {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .attached-file--delete {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .attached-file--delete .glyphicon {
   top: 2px;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+}
 
-/* Preloader: */
-.preloader {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/images/preloader.gif") no-repeat center center, rgba(255, 255, 255, 0.9);
-  z-index: 2000; }
+/* Dragging: */
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.example li.placeholder {
+  position: relative;
+}
+
+ol.example li.placeholder:before {
+  position: absolute;
+}
 
 /*# sourceMappingURL=admin.css.map */
