@@ -1,14 +1,23 @@
-# Morgentau CMS
+# Ascimation
 
-Morgentau is a Laravel-based small and simple CMS. It was designed to satisfy my own requests once upon a time. It has been a little bit modified since then, and a pretty bunch of sites are already controlled by it. 
+A service to convert GIF to animated ASCII and to GIF again. Built with the outstanding [Morgentau CMS](https://github.com/nikitades/morgentau).
 
-I tried to preserve the global rules and features of Laravel building this CMS. Anyway feel free to modify and change it since it is under the WTFPL licence aggreement. The more is better in this case.
+##Contribution
+
+The service uses these awesome libraries:
+
+[Gif Extractor](https://github.com/visualweber/gif-frame-extractor)
+
+[GifCreator](https://github.com/Sybio/GifCreator)
+
+Many thanks to the authors.
 
 ## Official Documentation
 
-Sorry, there are no any official documentation. However there is a small installation guide.
+Well well well. The very heart of the service is the AsciiController. It is still probably a bit messy but yet useful. Some day I will rewrite it very clean.
+There's not much else to say, so just try to read the code, lol.
 
-##Installation
+##Installation of the Morgentau CMS:
 
 1. Git clone this repo anywhere you want the ServerRoot (or whatever it is via Nginx) is.
 2. Cd to this folder and `composer update` in it. The composer will gladly download everything you may need.
@@ -21,3 +30,8 @@ Sorry, there are no any official documentation. However there is a small install
 9. You are now the admin. Log in in the admin panel (`/admin`) and go to the Views section. Create the base view (this is not the actual view file, just an alias for the page what view shout it use). Use for example `regularPage.blade.php` name. There is already a view with such a name, so it's ready to be assigned to the page.
 10. Go to the `/admin/pages` and create the first page. Edit it and assign the previously created view. Since the created page is the root page, it's URL is limited to `/`. So write something to the page content, save it and go to the `/`. Look and check if the text is show. **Everything done**.
 11. *Optional* - set your locale in app.php.
+
+##The usage
+
+1. Make sure all the folders have 755/775 access level. Especially what lies in /public/files and /public/images folders.
+2. 
